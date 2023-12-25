@@ -3,6 +3,7 @@
       <ol>Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388</ol>
       <ol>c:\oracle\app\paulo\product\21c\</ol>
       <ol>SQL DEVELOPER: https://www.oracle.com/database/sqldeveloper/technologies/download/ </ol>
+      <ol>Para SQL DEVELOPER usuario es SYSTEM y contraseña es 9239-89388</ol>
 </p>
 
 ---
