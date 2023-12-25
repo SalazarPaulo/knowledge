@@ -3,6 +3,7 @@
 Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388
 c:\oracle\app\paulo\product\21c\
 </p>
+
 ---
 
 Personal Repo to learn and remember
