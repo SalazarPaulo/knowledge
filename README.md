@@ -1,72 +1,105 @@
 # KNOWLEDGE COMMANDS
 Personal Repo to learn and remember
 ### Oracle
+
 SQLPLUS
--- ENTRY CMD
--- sqlplus sys/tu_contraseña_como_sys as sysdba
+
+<ul>
+      
+<li> ENTRY CMD </li>
+
+Command: 
+      
+      sqlplus sys/tu_contraseña_como_sys as sysdba
+      
+Example:
 
       SQLPLUS SYS/923989388 AS SYSDBA
+      
+<li> CREATE USER </li>
 
---CREATE USER
--- CREATE USER tu_usuario IDENTIFIED BY tu_contraseña;
+Command: 
+      
+      CREATE USER tu_usuario IDENTIFIED BY tu_contraseña;
+      
+Example:
 
     CREATE USER LocutorBD IDENTIFIED BY 923989388;
+    
+<li> PRIVILEGES </li>
 
---PRIVILEGES
 -- Concede todos los privilegios al usuario
--- GRANT ALL PRIVILEGES TO tu_usuario;
 
-    GRANT ALL PRIVILEGES TO LocutorBD;
--- Vistas 
--- GRANT CREATE VIEW TO tu_usuario;
+Command: 
 
-    GRANT CREATE VIEW TO LocutorBD;
+      GRANT ALL PRIVILEGES TO tu_usuario;
+      
+Example:
+
+      GRANT ALL PRIVILEGES TO LocutorBD;
+      
+<li> Vistas </li>
+
+Command: 
+
+      GRANT CREATE VIEW TO tu_usuario;
+
+ Example:
+ 
+       GRANT CREATE VIEW TO LocutorBD;
 
 --Permiso para conectar con java
 
     GRANT CONNECT, RESOURCE, DBA TO LocutorBD;
 
--- CONNECT
+<li> CONNECT </li>
 
     CONN LocutorBD/923989388;
 
--- SERVER
+<li> SERVER </li>
 
     SET SERVEROUTPUT ON
 
---Cambiar Puerto de la base de datos
+<li> Cambiar Puerto de la base de datos </li>
 
     EXEC DBMS_XDB.SETHTTPPORT(9090); -- Por default esta en el 8080
 
---Revisar puerto de ejecucion
+<li> Revisar puerto de ejecucion </li>
 
     SELECT DBMS_XDB.GETHTTPPORT FROM DUAL;
 
--- Setear la visualizacion tabla
+<li> Setear la visualizacion tabla </li>
 
     SET LINESIZE 200;
     SELECT * FROM cliente; -- ejemplo para ver como queda seteado la visualización
--- Ver todas las tablas creadas por el usuario
+    
+<li> Ver todas las tablas creadas por el usuario </li>
 
     SELECT table_name FROM user_tables;
--- Ver los errores en un trigger
+    
+<li> Ver los errores en un trigger </li>
 
     SELECT * FROM USER_ERRORS WHERE NAME = 'UpdateTablaClienteB';
--- ver Columnas de una tabla
+    
+<li> Ver Columnas de una tabla </li>
 
     SELECT COLUMN_NAME
     FROM USER_TAB_COLUMNS
     WHERE TABLE_NAME = 'prestamo';
--- ver errores
+    
+<li> Ver errores </li>
 
     SHOW ERRORS
--- eliminar atributo
+    
+<li> Eliminar atributo </li>
 
     ALTER TABLE PRESTAMO DROP COLUMN usuario;
--- deshabilitar el reemplazo de variables
+    
+<li> Deshabilitar el reemplazo de variables </li>
 
     SET DEFINE OFF; -- importante si para la data a insertar hay simbolos especiales por ejemplo '&'
--- Desabilitar todas las relaciones foraneas
+    
+<li> Desabilitar todas las relaciones foraneas </li>
 
     DECLARE
       v_sql VARCHAR2(1000);
@@ -78,25 +111,25 @@ SQLPLUS
     END;
     /
     
--- Desabilitar una relacion
+<li> Desabilitar una relacion </li>
 
     ALTER TABLE tabla
     DISABLE CONSTRAINT nombre_relacion;
     
--- Forzar elimimacion de una tabla
+<li> Forzar elimimacion de una tabla </li>  
 
     drop table tipo_telefono cascade constraints;
     
--- ver todas las secuencias
+<li> Ver todas las secuencias </li>
 
     SELECT SEQUENCE_NAME
     FROM USER_SEQUENCES;
     
---Eliminar secuencia
+<li> Eliminar secuencia </li>
 
     drop sequence seq_audio;
 
--- Ver tablas y cuantos valores tiene la tabla
+<li> Ver tablas y cuantos valores tiene la tabla </li>
 
     DECLARE
        table_name VARCHAR2(30);
@@ -122,7 +155,7 @@ SQLPLUS
     END;
     /
     
--- borrar todos los datos de las tablas y reiniciar las secuencias:
+<li> Borrar todos los datos de las tablas y reiniciar las secuencias </li>
 
     DECLARE
        table_name VARCHAR2(30);
@@ -147,4 +180,5 @@ SQLPLUS
        END LOOP;
     END;
     /
-
+    
+</ul>
