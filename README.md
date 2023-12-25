@@ -1,5 +1,8 @@
 # KNOWLEDGE COMMANDS
 Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388
+
+---
+
 Personal Repo to learn and remember
 ### Oracle
 
