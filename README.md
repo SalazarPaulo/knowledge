@@ -1,8 +1,8 @@
 # KNOWLEDGE COMMANDS
-<summary>
+<p>
 Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388
 c:\oracle\app\paulo\product\21c\
-</summary>
+</p>
 ---
 
 Personal Repo to learn and remember
