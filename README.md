@@ -1,7 +1,8 @@
 # KNOWLEDGE COMMANDS
 <p>
-Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388
-c:\oracle\app\paulo\product\21c\
+      <ol>Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña: 923989388</ol>
+      <ol>c:\oracle\app\paulo\product\21c\</ol>
+      <ol>SQL DEVELOPER: https://www.oracle.com/database/sqldeveloper/technologies/download/ </ol>
 </p>
 
 ---
