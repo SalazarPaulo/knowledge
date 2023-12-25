@@ -1,4 +1,5 @@
 # KNOWLEDGE COMMANDS
+Para las cuentas SYS, SYSTEM, PDBADMIN se utiliza la contraseña.
 Personal Repo to learn and remember
 ### Oracle
 
