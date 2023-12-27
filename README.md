@@ -4,6 +4,9 @@
       <ol>c:\oracle\app\paulo\product\21c\</ol>
       <ol>SQL DEVELOPER: https://www.oracle.com/database/sqldeveloper/technologies/download/ </ol>
       <ol>Para SQL DEVELOPER usuario es SYSTEM y contraseña es 9239-89388</ol>
+      ### <ol> Add Oracle JDBC driver in your Maven local repository</ol>
+      <ol>$ mvn install:install-file -Dfile=C:/Maven-3.8.6/ojdbc11.jar -DgroupId=com.oracle 
+	-DartifactId=ojdbc11 -Dversion=21.3 -Dpackaging=jar</ol>
 </p>
 
 ---
